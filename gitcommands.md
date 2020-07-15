@@ -111,3 +111,16 @@ git push <remotename> --delete <branchname>
 ```
 git push --tags
 ```
+
+### Remote
+
+#### Delete local branches that no longer exists in the remote repo
+
+```bash
+git remote prune origin
+```
+Use the --dry-run flag to only see what branches will be pruned, but not actually prune them:
+
+``` bash
+git remote prune origin --dry-run
+```
