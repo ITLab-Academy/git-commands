@@ -73,6 +73,20 @@ git checkout -b <branchname>
 git checkout --track <remotename>/<branchname>
 ```
 
+##### Discarding files not staged
+
+```bash
+git checkout -- <filepath>
+```
+
+#### Discarding all files not staged
+
+```bash
+git checkout -- .
+```
+
+> Be careful with this option, you will lose all changes!
+
 ### Tag
 
 #### Creating tags
