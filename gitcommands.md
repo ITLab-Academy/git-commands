@@ -1,6 +1,6 @@
 # Git Commands
 
-## My Custom Commands
+## Tips and Tricks
 
 ### Deleting local and remote branches
 
