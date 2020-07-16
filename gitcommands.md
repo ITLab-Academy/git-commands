@@ -100,6 +100,25 @@ git tag
 
 ### Push 
 
+#### Pushing remote branch
+
+```bash
+git push
+```
+
+#### Pushing remote forcing your local branch version
+
+```bash
+git push --force
+```
+
+> Prefer [--force-with-lease option](#pushing-remote-with-forcing-prevent-remote-throw-someone-elses-work) over --force
+
+#### Pushing remote with forcing prevent remote throw someone else's work
+```bash
+git push --force-with-lease
+```
+
 #### Deleting remote branch
 
 ```bash
