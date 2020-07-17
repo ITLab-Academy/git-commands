@@ -1,5 +1,17 @@
 # Git Commands
 
+## Table of Contents
+
+1. [Tips And Tricks](#tips-and-tricks)
+1. [Basic Snapshotting](#basic-snapshotting)
+1. [Branching and Merging](#branching-and-merging)
+    1. [Branch](#branch)
+    1. [Checkout](#checkout)
+    1. [Tag](#tag)
+1. [Sharing and Updating Projects](#sharing-and-updating-projects)
+    1. [Push](#push)
+    1. [Remote](#remote)
+
 ## Tips and Tricks
 
 ### Deleting local and remote branches
@@ -10,8 +22,10 @@ git push <remotename> --delete <branchname> | git branch <branchname> -d
 
 > See [how to delete remote branch](#deleting-remote-branch) and [how to delete local branch](#deleting-local-branch)
 
+[Back to top](#table-of-contents)
 ## Basic Snapshotting
 
+[Back to top](#table-of-contents)
 ## Branching and Merging
 
 ### Branch
@@ -41,51 +55,54 @@ git branch -d <branchname>
 
 > See [how delete a remote branch](#deleting-remote-branch)
 
-#### Checkout
+[Back to top](#table-of-contents)
+### Checkout
 
-##### Simple checkout
+#### Simple checkout
 
 ```bash
 git checkout <branchname>
 ```
 
-##### Checkout to last branch
+#### Checkout to last branch
 
 ```bash
 git checkout -
 ```
 
-##### Checkout creating a new branch
+#### Checkout creating a new branch
 
 ```bash
 git checkout -b <branchname>
 ```
 
-##### Creating branch from a tag
+#### Creating branch from a tag
 ```bash
 git checkout tags/<tagname>
 git checkout -b <branchname>
 ```
 
-##### Checkout a remote branch
+#### Checkout a remote branch
 
 ```bash
 git checkout --track <remotename>/<branchname>
 ```
 
-##### Discarding files not staged
+#### Discarding files not staged
 
 ```bash
 git checkout -- <filepath>
 ```
 
-#### Discarding all files not staged
+### Discarding all files not staged
 
 ```bash
 git checkout -- .
 ```
 
 > Be careful with this option, you will lose all changes!
+
+[Back to top](#table-of-contents)
 
 ### Tag
 
@@ -109,6 +126,8 @@ git tag -a v1.4 -m "my version 1.4"
 ```bash
 git tag
 ```
+
+[Back to top](#table-of-contents)
 
 ## Sharing and Updating Projects
 
@@ -145,6 +164,8 @@ git push <remotename> --delete <branchname>
 git push --tags
 ```
 
+[Back to top](#table-of-contents)
+
 ### Remote
 
 #### Delete local branches that no longer exists in the remote repo
@@ -157,3 +178,5 @@ Use the --dry-run flag to only see what branches will be pruned, but not actuall
 ``` bash
 git remote prune origin --dry-run
 ```
+
+[Back to top](#table-of-contents)
