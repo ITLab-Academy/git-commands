@@ -20,6 +20,18 @@
 git push <remotename> --delete <branchname> | git branch <branchname> -d
 ```
 
+### Deleting local branches that have been merged
+
+merged into HEAD
+```bash
+git branch --merged | grep -v '\\*\\|master\\|homolog' | xargs -n 1 git branch -d
+```
+
+merged into origin/master
+```bash
+git branch --merged origin/master | grep -v '\\*\\|master\\|homolog' | xargs -n 1 git branch -d
+```
+
 > See [how to delete remote branch](#deleting-remote-branch) and [how to delete local branch](#deleting-local-branch)
 
 [Back to top](#table-of-contents)
