@@ -52,6 +52,23 @@ git commit --amend --no-edit
 ```
 
 [Back to top](#table-of-contents)
+
+### Reset
+
+#### Undo last commit and braing changes back into Snapshotting
+
+```bash
+git reset --soft
+```
+
+#### Undo last commit and destroy all changes
+
+```bash
+git reset --hard
+```
+
+[Back to top](#table-of-contents)
+
 ## Branching and Merging
 
 ### Branch
