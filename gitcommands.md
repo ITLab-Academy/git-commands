@@ -55,7 +55,7 @@ git commit --amend --no-edit
 
 ### Reset
 
-#### Undo last commit and braing changes back into Snapshotting
+#### Undo last commit and bring changes back into Snapshotting
 
 ```bash
 git reset --soft
