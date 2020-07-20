@@ -4,6 +4,8 @@
 
 1. [Tips And Tricks](#tips-and-tricks)
 1. [Basic Snapshotting](#basic-snapshotting)
+    1. [Commit](#commit)
+    1. [Reset](#reset)
 1. [Branching and Merging](#branching-and-merging)
     1. [Branch](#branch)
     1. [Checkout](#checkout)
