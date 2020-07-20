@@ -37,6 +37,20 @@ git branch --merged origin/master | grep -v '\\*\\|master\\|homolog' | xargs -n 
 [Back to top](#table-of-contents)
 ## Basic Snapshotting
 
+### Commit
+
+#### Editing last commit
+
+```bash
+git commit --amend
+```
+
+#### Edit last commit without edit message
+
+```bash
+git commit --amend --no-edit
+```
+
 [Back to top](#table-of-contents)
 ## Branching and Merging
 
