@@ -3,6 +3,8 @@
 ## Table of Contents
 
 1. [Tips And Tricks](#tips-and-tricks)
+1. [Getting and Creating Projects](#getting-and-creating-projects)
+    1. [Clone](#clone)
 1. [Basic Snapshotting](#basic-snapshotting)
     1. [Diff](#diff)
     1. [Commit](#commit)
@@ -70,6 +72,20 @@ git show -<branchname>:<file> > <file>
 ```
 
 [Back to top](#table-of-contents)
+
+
+## Getting and Creating Projects
+
+### Clone
+
+#### Cloning a specific branch
+
+```bash
+git clone -b <branchname> --single-branch <repourl>
+```
+
+[Back to top](#table-of-contents)
+
 ## Basic Snapshotting
 
 ### Diff 
