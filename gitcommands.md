@@ -6,6 +6,7 @@
 1. [Basic Snapshotting](#basic-snapshotting)
     1. [Diff](#diff)
     1. [Commit](#commit)
+    1. [Restore](#restore)
     1. [Reset](#reset)
 1. [Branching and Merging](#branching-and-merging)
     1. [Branch](#branch)
@@ -14,6 +15,8 @@
 1. [Sharing and Updating Projects](#sharing-and-updating-projects)
     1. [Push](#push)
     1. [Remote](#remote)
+1. [Inspection and Comparison](#inspection-and-comparison)
+    1. [Show](#show)
 
 ## Tips and Tricks
 
@@ -37,6 +40,35 @@ git branch --merged origin/master | grep -v '\\*\\|master\\|homolog' | xargs -n 
 
 > See [how to delete remote branch](#deleting-remote-branch) and [how to delete local branch](#deleting-local-branch)
 
+
+### Getting file from another branch
+
+#### Using checkout command
+
+```bash
+# adding to staging
+git checkout <branchname> --<file>
+```
+
+> See [more details about getting a file using resto command](#getting-file-from-another-branch-using-checkout)
+
+#### Using restore command
+
+```bash
+# adding to staging
+git restore -s <branchname> --<file>
+```
+
+> See [more details about getting a file using restore command](#getting-file-from-another-branch-using-restore)
+
+
+#### Using show command
+
+```bash
+# creating a file
+git show -<branchname>:<file> > <file>
+```
+
 [Back to top](#table-of-contents)
 ## Basic Snapshotting
 
@@ -47,6 +79,18 @@ git branch --merged origin/master | grep -v '\\*\\|master\\|homolog' | xargs -n 
 ```bash
 gid diff <branchname1> <branchname2> -- <filename>
 ```
+
+[Back to top](#table-of-contents)
+
+### Restore
+
+#### Getting file from another branch using restore
+
+```bash
+git restore -s <branchname> --<file>
+```
+
+> This way the file will be added in the staging
 
 [Back to top](#table-of-contents)
 
@@ -158,6 +202,14 @@ git checkout -- .
 
 > Be careful with this option, you will lose all changes!
 
+#### Getting file from another branch using checkout
+
+```bash
+git checkout <branchname> --<file>
+```
+
+> This way the file will be added in the staging
+
 [Back to top](#table-of-contents)
 
 ### Tag
@@ -234,5 +286,18 @@ Use the --dry-run flag to only see what branches will be pruned, but not actuall
 ``` bash
 git remote prune origin --dry-run
 ```
+
+[Back to top](#table-of-contents)
+## Inspection and Comparison
+
+### Show
+
+#### Getting file from another branch using show
+
+```bash
+git show -<branchname>:<file> > <file>
+```
+
+> This way will be created a new file in your branch
 
 [Back to top](#table-of-contents)
