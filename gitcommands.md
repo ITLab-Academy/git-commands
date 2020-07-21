@@ -4,6 +4,7 @@
 
 1. [Tips And Tricks](#tips-and-tricks)
 1. [Basic Snapshotting](#basic-snapshotting)
+    1. [Diff](#diff)
     1. [Commit](#commit)
     1. [Reset](#reset)
 1. [Branching and Merging](#branching-and-merging)
@@ -38,6 +39,16 @@ git branch --merged origin/master | grep -v '\\*\\|master\\|homolog' | xargs -n 
 
 [Back to top](#table-of-contents)
 ## Basic Snapshotting
+
+### Diff 
+
+#### Compare file from two different branches
+
+```bash
+gid diff <branchname1> <branchname2> -- <filename>
+```
+
+[Back to top](#table-of-contents)
 
 ### Commit
 
