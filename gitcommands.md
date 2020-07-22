@@ -10,6 +10,7 @@
     1. [Commit](#commit)
     1. [Restore](#restore)
     1. [Reset](#reset)
+    1. [Mv](#mv)
 1. [Branching and Merging](#branching-and-merging)
     1. [Branch](#branch)
     1. [Checkout](#checkout)
@@ -138,6 +139,16 @@ git reset --soft
 
 ```bash
 git reset --hard
+```
+
+[Back to top](#table-of-contents)
+
+### MV
+
+#### Rename a file in a case-sensitive way
+
+```bash
+git mv <oldfilename> <Newfilename>
 ```
 
 [Back to top](#table-of-contents)
