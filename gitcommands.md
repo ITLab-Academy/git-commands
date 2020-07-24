@@ -357,5 +357,13 @@ git revert <oldestcommittarget>..<lastcommit>
 git revert HEAD~2..HEAD
 ```
 
+#### Reverting a group of commits using tags
+
+```bash
+git revert v.2..v.3
+```
+
+> All commits between v.2 and v.3 tags will be reverted
+
 
 [Back to top](#table-of-contents)
