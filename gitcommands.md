@@ -45,7 +45,6 @@ git branch --merged origin/master | grep -v '\\*\\|master\\|homolog' | xargs -n 
 
 > See [how to delete remote branch](#deleting-remote-branch) and [how to delete local branch](#deleting-local-branch)
 
-
 ### Getting file from another branch
 
 #### Using checkout command
@@ -74,8 +73,44 @@ git restore -s <branchname> --<file>
 git show -<branchname>:<file> > <file>
 ```
 
-[Back to top](#table-of-contents)
+### Rollback and fix a publication
 
+In this example we just published the v.2 tag with a bug. First we need to revert our app to v.1 version
+
+```bash
+git revert v.1..v.2 --no-commit
+```
+
+Now we create a new commit with this revert
+
+```bash
+git commit -m "reverting v.2 publish"
+```
+
+> See [Reverting a group of commits using tags](#reverting-a-group-of-commits-using-tags) and [Reverting a group of with one commit](#reverting-a-group-of-with-one-commit)
+
+
+Checkout the tag with the bug
+
+``` bash
+git checkout v.2
+```
+
+> See [Creating branch from a tag](#creating-branch-from-a-tag)
+
+Create a branch to fix the bug
+
+```bash
+git checkout -b hotfix/v.2
+```
+
+> See [Checkout creating a new branch](#checkout-creating-a-new-branch)
+
+Fix the bug, add, commit, push and merge to master. Create new tag (v.2.1), publish and be happy :)
+
+
+
+[Back to top](#table-of-contents)
 
 ## Getting and Creating Projects
 
@@ -364,6 +399,14 @@ git revert v.2..v.3
 ```
 
 > All commits between v.2 and v.3 tags will be reverted
+
+#### Reverting a group of commits with one commit
+
+```bash
+git revert v.2..v.3 --no-commit
+```
+
+> All commits between v.2 and v.3 tags will be reverted and added to staged so you can commit all changes as one commit.
 
 
 [Back to top](#table-of-contents)
