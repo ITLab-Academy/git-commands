@@ -343,4 +343,13 @@ Revert commits without lost commits history
 git revert HEAD
 ```
 
+#### Reverting a group of commits
+
+```bash
+git revert <oldestcommittarget>..<lastcommit>
+```
+
+> All commits bettwen oldestcommittarget and lastcommit will be reverted
+
+
 [Back to top](#table-of-contents)
