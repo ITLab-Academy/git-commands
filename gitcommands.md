@@ -20,6 +20,8 @@
     1. [Remote](#remote)
 1. [Inspection and Comparison](#inspection-and-comparison)
     1. [Show](#show)
+1. [Patching](#patching)
+    1. [Revert](#revert)
 
 ## Tips and Tricks
 
@@ -326,5 +328,19 @@ git show -<branchname>:<file> > <file>
 ```
 
 > This way will be created a new file in your branch
+
+[Back to top](#table-of-contents)
+
+## Patching
+
+### Revert
+
+Revert commits without lost commits history
+
+#### Reverting last commit
+
+```bash
+git revert HEAD
+```
 
 [Back to top](#table-of-contents)
