@@ -351,5 +351,11 @@ git revert <oldestcommittarget>..<lastcommit>
 
 > All commits bettwen oldestcommittarget and lastcommit will be reverted
 
+#### Reverting a group of commits using HEAD shortcut
+
+```bash
+git revert HEAD~2..HEAD
+```
+
 
 [Back to top](#table-of-contents)
