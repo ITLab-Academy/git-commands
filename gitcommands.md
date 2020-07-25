@@ -110,6 +110,12 @@ Fix the bug, add, commit, push and merge to master. Create new tag (v.2.1), publ
 
 
 
+### Show all aliases
+
+```bash
+git config --get-regexp alias
+```
+
 [Back to top](#table-of-contents)
 
 ## Getting and Creating Projects
