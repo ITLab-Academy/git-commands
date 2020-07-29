@@ -21,6 +21,7 @@
 1. [Inspection and Comparison](#inspection-and-comparison)
     1. [Show](#show)
 1. [Patching](#patching)
+    1. [Cherry-Pick](#cherry-pick)
     1. [Revert](#revert)
 
 ## Tips and Tricks
@@ -413,6 +414,17 @@ git revert v.2..v.3 --no-commit
 ```
 
 > All commits between v.2 and v.3 tags will be reverted and added to staged so you can commit all changes as one commit.
+
+
+[Back to top](#table-of-contents)
+
+### Cherry-Pick
+
+#### Copy a specific commit to your current branch
+
+```bash
+git cherry-pick <commithash>
+```
 
 
 [Back to top](#table-of-contents)
