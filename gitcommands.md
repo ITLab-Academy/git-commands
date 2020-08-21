@@ -23,6 +23,9 @@
 1. [Patching](#patching)
     1. [Cherry-Pick](#cherry-pick)
     1. [Revert](#revert)
+1. [Plumbing Commands](#plumbing-commands)
+    1. [Update-Index](#update-index)
+
 
 ## Tips and Tricks
 
@@ -426,5 +429,25 @@ git revert v.2..v.3 --no-commit
 git cherry-pick <commithash>
 ```
 
+
+[Back to top](#table-of-contents)
+
+
+## Plumbing Commands
+
+## Update-index
+
+### Modify files managed by Git locally (or updated automatically) but you do not want Git to manage that change
+
+```bash
+git update-index --skip-worktree <file>
+```
+
+to restore file use:
+
+```bash
+git update-index --no-skip-worktree <file>
+
+```
 
 [Back to top](#table-of-contents)
