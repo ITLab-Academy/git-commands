@@ -112,12 +112,24 @@ git checkout -b hotfix/v.2
 
 Fix the bug, add, commit, push and merge to master. Create new tag (v.2.1), publish and be happy :)
 
-
-
 ### Show all aliases
 
 ```bash
 git config --get-regexp alias
+```
+
+[Back to top](#table-of-contents)
+
+### Change local user info
+
+That is the way to change your local repo user info
+
+```bash
+git config user.email <youremail>
+```
+
+```bash
+git config user.name <name>
 ```
 
 [Back to top](#table-of-contents)
