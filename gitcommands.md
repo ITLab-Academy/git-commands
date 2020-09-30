@@ -3,6 +3,7 @@
 ## Table of Contents
 
 1. [Tips And Tricks](#tips-and-tricks)
+1. [Setup and Config](#setup-and-config)
 1. [Getting and Creating Projects](#getting-and-creating-projects)
     1. [Clone](#clone)
 1. [Basic Snapshotting](#basic-snapshotting)
@@ -130,6 +131,19 @@ git config user.email <youremail>
 
 ```bash
 git config user.name <name>
+```
+
+[Back to top](#table-of-contents)
+
+
+## Setup and Config
+
+### Rerere
+
+Enabling Rerere (Reuse recorded resolution of conflicted merges).
+
+``` bash
+git config --global rerere.enabled true
 ```
 
 [Back to top](#table-of-contents)
