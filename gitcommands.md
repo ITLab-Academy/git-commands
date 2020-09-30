@@ -133,6 +133,14 @@ git config user.email <youremail>
 git config user.name <name>
 ```
 
+### Forgot recorded wrong rerere resolution
+
+If you have enabled rerere feature and record a wrong merge conflict, you can erase/forgot this merge resolution with following command:
+```bash
+git rerere forget <pathtofile>
+```
+
+
 [Back to top](#table-of-contents)
 
 
@@ -142,7 +150,7 @@ git config user.name <name>
 
 Enabling Rerere (Reuse recorded resolution of conflicted merges).
 
-``` bash
+```bash
 git config --global rerere.enabled true
 ```
 
