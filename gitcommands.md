@@ -15,6 +15,7 @@
 1. [Branching and Merging](#branching-and-merging)
     1. [Branch](#branch)
     1. [Checkout](#checkout)
+    1. [Stash](#stash)
     1. [Tag](#tag)
 1. [Sharing and Updating Projects](#sharing-and-updating-projects)
     1. [Push](#push)
@@ -317,6 +318,30 @@ git checkout <branchname> --<file>
 ```
 
 > This way the file will be added in the staging
+
+[Back to top](#table-of-contents)
+
+### Stash
+
+#### Stashing files
+
+```bash
+git stash -a | --all
+```
+
+> Warning: this options doesn't include untracked files, to include untracked files as well see [Stashing including untracked files](#stashing-including-untracked-files);
+
+#### Stashing including untracked files
+
+```bash
+git stash -u | --include-untracked
+```
+
+#### Stashing specific files
+
+```bash
+git stash <filepath-1> <filepath-2> .... <filepath-N>
+```
 
 [Back to top](#table-of-contents)
 
