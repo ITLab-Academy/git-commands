@@ -15,6 +15,7 @@
 1. [Branching and Merging](#branching-and-merging)
     1. [Branch](#branch)
     1. [Checkout](#checkout)
+    1. [Merge](#merge)
     1. [Stash](#stash)
     1. [Tag](#tag)
 1. [Sharing and Updating Projects](#sharing-and-updating-projects)
@@ -318,6 +319,16 @@ git checkout <branchname> --<file>
 ```
 
 > This way the file will be added in the staging
+
+[Back to top](#table-of-contents)
+
+### Merge
+
+#### Merge a branch but not commit
+
+```bash
+git merge <branchname> --no-commit
+```
 
 [Back to top](#table-of-contents)
 
