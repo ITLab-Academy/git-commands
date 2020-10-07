@@ -332,6 +332,16 @@ git merge <branchname> --no-commit
 
 [Back to top](#table-of-contents)
 
+#### Merge a branch always generating a commit
+
+Create a merge commit even when the merge could instead be resolved as a ff mode.
+
+```bash
+git merge <branchname> --no-ff
+```
+
+> This is a great resource when you generate a new branch, merge this new branch to the branch source where any others commits was created. This workflow without --no-ff parameter will not generate a merge commit, this will `copy` commits to source branch.
+
 ### Stash
 
 #### Stashing files
