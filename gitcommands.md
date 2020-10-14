@@ -145,6 +145,17 @@ git rerere forget <pathtofile>
 
 [Back to top](#table-of-contents)
 
+### .gitattributes Line Endings
+
+Git can actually be configured to automatically handle line endings using a setting called autocrlf. This automatically changes the line endings in files depending on the operating system. However, you shouldn't rely on people having correctly configured Git installations. If someone with an incorrect configuration checked in a file, it would not be easily visible in a pull request and you'd end up with a repository with inconsistent line endings.
+
+The solution to this is to add a .gitattributes file at the root of your repository and set the line endings to be automatically normalised like so:
+
+```text
+# Set default behavior to automatically normalize line endings.
+* text=auto
+```
+
 
 ## Setup and Config
 
