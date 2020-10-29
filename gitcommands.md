@@ -5,6 +5,7 @@
 1. [Tips And Tricks](#tips-and-tricks)
 1. [Setup and Config](#setup-and-config)
     1. [Rerere](#rerere)
+    1. [Auto-correct](#auto-correct)
 1. [Getting and Creating Projects](#getting-and-creating-projects)
     1. [Clone](#clone)
 1. [Basic Snapshotting](#basic-snapshotting)
@@ -167,6 +168,33 @@ Enabling Rerere (Reuse recorded resolution of conflicted merges).
 ```bash
 git config --global rerere.enabled true
 ```
+
+### Auto-correct
+
+Enable auto-correct and suggested commands will run after 2 seconds.
+
+before:
+```bash
+git statsh pop
+
+git: 'statsh' is not a git command . See 'git --help'.
+
+the most similar command is
+    stash
+```
+
+```bash
+git config --global help.autocorrect 20
+```
+
+after:
+```
+git statsh pop
+
+WARNING: You called a Git command named 'statsh', witch does not exist.
+Continuing in 2.0 seconds, assuming that you meant 'stash'.
+```
+
 
 [Back to top](#table-of-contents)
 
