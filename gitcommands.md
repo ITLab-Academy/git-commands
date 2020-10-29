@@ -4,6 +4,7 @@
 
 1. [Tips And Tricks](#tips-and-tricks)
 1. [Setup and Config](#setup-and-config)
+    1. [Rerere](#rerere)
 1. [Getting and Creating Projects](#getting-and-creating-projects)
     1. [Clone](#clone)
 1. [Basic Snapshotting](#basic-snapshotting)
