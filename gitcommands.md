@@ -404,6 +404,12 @@ git stash -u | --include-untracked
 git stash <filepath-1> <filepath-2> .... <filepath-N>
 ```
 
+#### Stashing with message
+
+```bash
+git stash "wip on something"
+```
+
 [Back to top](#table-of-contents)
 
 ### Tag
