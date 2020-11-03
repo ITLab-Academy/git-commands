@@ -6,6 +6,7 @@
 1. [Setup and Config](#setup-and-config)
     1. [Rerere](#rerere)
     1. [Auto-correct](#auto-correct)
+    1. [Changing push strategies](#changing-push-strategies)
 1. [Getting and Creating Projects](#getting-and-creating-projects)
     1. [Clone](#clone)
 1. [Basic Snapshotting](#basic-snapshotting)
@@ -198,6 +199,35 @@ git statsh pop
 
 WARNING: You called a Git command named 'statsh', witch does not exist.
 Continuing in 2.0 seconds, assuming that you meant 'stash'.
+```
+
+### Changing push strategies
+
+Using `current` option to push branches with same name.
+
+before:
+
+```bash
+git push
+fatal: The current branch mko has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin mko
+```
+
+configure strategy:
+
+```bash
+git config --global push.default current
+```
+
+after:
+
+```bash
+git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To [origin branch]
+ * [new branch]      mko -> mko
 ```
 
 [Back to top](#table-of-contents)
