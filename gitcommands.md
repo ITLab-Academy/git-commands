@@ -43,11 +43,13 @@ git push <remotename> --delete <branchname> | git branch <branchname> -d
 ### Deleting local branches that have been merged
 
 merged into HEAD
+
 ```bash
 git branch --merged | grep -v '\\*\\|master\\|homolog' | xargs -n 1 git branch -d
 ```
 
 merged into origin/master
+
 ```bash
 git branch --merged origin/master | grep -v '\\*\\|master\\|homolog' | xargs -n 1 git branch -d
 ```
@@ -140,6 +142,7 @@ git config user.name <name>
 ### Forgot recorded wrong rerere resolution
 
 If you have enabled rerere feature and record a wrong merge conflict, you can erase/forgot this merge resolution with following command:
+
 ```bash
 git rerere forget <pathtofile>
 ```
@@ -174,6 +177,7 @@ git config --global rerere.enabled true
 Enable auto-correct and suggested commands will run after 2 seconds.
 
 before:
+
 ```bash
 git statsh pop
 
@@ -188,13 +192,13 @@ git config --global help.autocorrect 20
 ```
 
 after:
-```
+
+```bash
 git statsh pop
 
 WARNING: You called a Git command named 'statsh', witch does not exist.
 Continuing in 2.0 seconds, assuming that you meant 'stash'.
 ```
-
 
 [Back to top](#table-of-contents)
 
@@ -287,10 +291,13 @@ git mv <oldfilename> <Newfilename>
 #### Listing branches
 
 ##### Simple List branches
+
 ```bash
 git branch
 ```
+
 ##### List remote branches
+
 ```bash
 git branch --remote
 ```
@@ -327,6 +334,7 @@ git checkout -b <branchname>
 ```
 
 #### Creating branch from a tag
+
 ```bash
 git checkout tags/<tagname>
 git checkout -b <branchname>
@@ -421,6 +429,7 @@ git stash "wip on something"
 ```bash
 git tag <tagname>
 ```
+
 ##### New tag with annotated and comments
 
 ```bash
@@ -439,7 +448,7 @@ git tag
 
 ## Sharing and Updating Projects
 
-### Push 
+### Push
 
 #### Pushing remote branch
 
@@ -456,6 +465,7 @@ git push --force
 > Prefer [--force-with-lease option](#pushing-remote-with-forcing-prevent-remote-throw-someone-elses-work) over --force
 
 #### Pushing remote with forcing prevent remote throw someone else's work
+
 ```bash
 git push --force-with-lease
 ```
@@ -468,7 +478,7 @@ git push <remotename> --delete <branchname>
 
 #### Pushing tags
 
-```
+```bash
 git push --tags
 ```
 
@@ -481,6 +491,7 @@ git push --tags
 ```bash
 git remote prune origin
 ```
+
 Use the --dry-run flag to only see what branches will be pruned, but not actually prune them:
 
 ``` bash
@@ -488,6 +499,7 @@ git remote prune origin --dry-run
 ```
 
 [Back to top](#table-of-contents)
+
 ## Inspection and Comparison
 
 ### Show
@@ -544,7 +556,6 @@ git revert v.2..v.3 --no-commit
 
 > All commits between v.2 and v.3 tags will be reverted and added to staged so you can commit all changes as one commit.
 
-
 [Back to top](#table-of-contents)
 
 ### Cherry-Pick
@@ -555,9 +566,7 @@ git revert v.2..v.3 --no-commit
 git cherry-pick <commithash>
 ```
 
-
 [Back to top](#table-of-contents)
-
 
 ## Plumbing Commands
 
