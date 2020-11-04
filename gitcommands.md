@@ -7,6 +7,7 @@
     1. [Rerere](#rerere)
     1. [Auto-correct](#auto-correct)
     1. [Changing push strategies](#changing-push-strategies)
+    1. [Changing default editor](#changing-default-editor)
 1. [Getting and Creating Projects](#getting-and-creating-projects)
     1. [Clone](#clone)
 1. [Basic Snapshotting](#basic-snapshotting)
@@ -228,6 +229,14 @@ git push
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To [origin branch]
  * [new branch]      mko -> mko
+```
+
+[Back to top](#table-of-contents)
+
+### Changing default editor
+
+```bash
+git config --global core.editor "<optional-editor-path|editor-name>";
 ```
 
 [Back to top](#table-of-contents)
