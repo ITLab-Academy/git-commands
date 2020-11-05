@@ -11,6 +11,7 @@
 1. [Getting and Creating Projects](#getting-and-creating-projects)
     1. [Clone](#clone)
 1. [Basic Snapshotting](#basic-snapshotting)
+    1. [Add](#add)
     1. [Diff](#diff)
     1. [Commit](#commit)
     1. [Restore](#restore)
@@ -255,7 +256,17 @@ git clone -b <branchname> --single-branch <repourl>
 
 ## Basic Snapshotting
 
-### Diff 
+### Add
+
+#### Add all files with exceptions
+
+```bash
+git add . :!<path-to-exclude>
+```
+
+[Back to top](#table-of-contents)
+
+### Diff
 
 #### Compare file from two different branches
 
