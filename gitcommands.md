@@ -302,6 +302,12 @@ git commit --amend
 git commit --amend --no-edit
 ```
 
+#### Marks your commit as a fix of a previous commit
+
+```bash
+git commit --fixup <hash commit to fix>
+```
+
 [Back to top](#table-of-contents)
 
 ### Reset
