@@ -240,6 +240,12 @@ To [origin branch]
 git config --global core.editor "<optional-editor-path|editor-name>";
 ```
 
+### Enable Git's autosquash feature by default
+
+```bash
+git config --global rebase.autosquash true
+```
+
 [Back to top](#table-of-contents)
 
 ## Getting and Creating Projects
