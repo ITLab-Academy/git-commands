@@ -452,6 +452,20 @@ git merge <branchname> --no-ff
 
 > This is a great resource when you generate a new branch, merge this new branch to the branch source where any others commits was created. This workflow without --no-ff parameter will not generate a merge commit, this will `copy` commits to source branch.
 
+### Merge a branch deciding a side for conflicts
+
+#### Using target branch as side to resolve conflict
+
+```bash
+git merge <branch-origin> -Xours
+```
+
+#### Using origin branch as side to resolve conflict
+
+```bash
+git merge <branch-origin> -Xtheirs
+```
+
 ### Stash
 
 #### Stashing files
