@@ -31,6 +31,8 @@
 1. [Patching](#patching)
     1. [Cherry-Pick](#cherry-pick)
     1. [Revert](#revert)
+1. [Administration](#administration)
+    1. [Reflog](#reflog)
 1. [Plumbing Commands](#plumbing-commands)
     1. [Update-Index](#update-index)
 
@@ -640,6 +642,20 @@ git revert v.2..v.3 --no-commit
 
 ```bash
 git cherry-pick <commithash>
+```
+
+> You can search a commit from history using [reflog](#reflog).
+
+[Back to top](#table-of-contents)
+
+## Administration
+
+### Reflog
+
+#### Search from Reflog
+
+```bash
+git reflog --grep-reflog="<pattern>"
 ```
 
 [Back to top](#table-of-contents)
