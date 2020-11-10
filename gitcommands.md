@@ -646,7 +646,7 @@ git cherry-pick <commithash>
 
 ## Plumbing Commands
 
-## Update-index
+### Update-index
 
 ### Modify files managed by Git locally (or updated automatically) but you do not want Git to manage that change
 
