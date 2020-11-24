@@ -279,10 +279,16 @@ git add . :!<path-to-exclude>
 #### Compare file from two different branches
 
 ```bash
-gid diff <branchname1> <branchname2> -- <filename>
+git diff <branchname1> <branchname2> -- <filename>
 ```
 
 [Back to top](#table-of-contents)
+
+#### Compare branches
+
+```bash
+git diff <branchname1> <branchname2> --stat
+```
 
 ### Restore
 
