@@ -67,7 +67,7 @@ git branch --merged origin/master | grep -v '\\*\\|master\\|homolog' | xargs -n 
 
 ```bash
 # adding to staging
-git checkout <branchname> --<file>
+git checkout <branchname> -- <file>
 ```
 
 > See [more details about getting a file using resto command](#getting-file-from-another-branch-using-checkout)
@@ -76,7 +76,7 @@ git checkout <branchname> --<file>
 
 ```bash
 # adding to staging
-git restore -s <branchname> --<file>
+git restore -s <branchname> -- <file>
 ```
 
 > See [more details about getting a file using restore command](#getting-file-from-another-branch-using-restore)
