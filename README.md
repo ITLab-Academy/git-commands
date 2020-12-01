@@ -21,6 +21,7 @@
     1. [Branch](#branch)
     1. [Checkout](#checkout)
     1. [Merge](#merge)
+    1. [Log](#log)
     1. [Stash](#stash)
     1. [Tag](#tag)
 1. [Sharing and Updating Projects](#sharing-and-updating-projects)
@@ -473,6 +474,18 @@ git merge <branch-origin> -Xours
 ```bash
 git merge <branch-origin> -Xtheirs
 ```
+
+### Log
+
+#### List logs from since certain commit
+
+```bash
+git log <commit_hash>..HEAD
+```
+
+
+
+[Back to top](#table-of-contents)
 
 ### Stash
 
