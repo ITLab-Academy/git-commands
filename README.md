@@ -27,6 +27,7 @@
 1. [Sharing and Updating Projects](#sharing-and-updating-projects)
     1. [Push](#push)
     1. [Remote](#remote)
+    1. [Submodule](#submodule)
 1. [Inspection and Comparison](#inspection-and-comparison)
     1. [Show](#show)
 1. [Patching](#patching)
@@ -608,6 +609,16 @@ git show -<branchname>:<file> > <file>
 ```
 
 > This way will be created a new file in your branch
+
+[Back to top](#table-of-contents)
+
+### Submodule
+
+#### Updates the submodule to the latest version
+
+```bash
+git submodule update
+```
 
 [Back to top](#table-of-contents)
 
