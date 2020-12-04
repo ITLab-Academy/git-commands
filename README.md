@@ -384,7 +384,14 @@ git branch -d <branchname>
 
 > See [how delete a remote branch](#deleting-remote-branch)
 
+#### Renaming local branch
+
+```bash
+git branch -m <oldname> <newname>
+```
+
 [Back to top](#table-of-contents)
+
 ### Checkout
 
 #### Simple checkout
