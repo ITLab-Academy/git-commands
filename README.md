@@ -543,6 +543,12 @@ git tag -a v1.4 -m "my version 1.4"
 
 > See [how to create a branch from a tag](#creating-branch-from-a-tag)
 
+##### New tag from a specific commit
+
+```bash
+git tag -a v1.5 -m "my version 1.5" <commit-hash>
+```
+
 #### List tags
 
 ```bash
