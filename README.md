@@ -41,6 +41,10 @@
 
 ## Tips and Tricks
 
+### Install Git Extras
+
+[Git Extras](https://github.com/tj/git-extras) is a git utility with some really useful commands.
+
 ### Deleting local and remote branches
 
 ```bash
